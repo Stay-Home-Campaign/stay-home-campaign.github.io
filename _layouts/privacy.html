@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="Privacy Policy for dontleave.org">
+    <meta name="keywords" content="HTML,CSS,JavaScript">
+    <meta name="author" content="#STAYHOME">
+    <meta http-equiv="Content-Language" content="en">
+
+    <title>Privacy Policy | #STAYHOME </title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="/css/stayhome.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato|Sen|Raleway:700&display=swap" rel="stylesheet">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160661864-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-160661864-1');
+    </script>
+
+</head>
+<body>
+<!-- Facebook share button -->
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v6.0"></script>
+
+<!-- Progress bar by https://medium.com/@nilayvishwakarma/ -->
+<div id="_progress"></div>
+<script>
+    document.addEventListener(
+        "scroll",
+        function() {
+            var scrollTop =
+                document.documentElement["scrollTop"] || document.body["scrollTop"];
+            var scrollBottom =
+                (document.documentElement["scrollHeight"] ||
+                    document.body["scrollHeight"]) - document.documentElement.clientHeight;
+            scrollPercent = scrollTop / scrollBottom * 100 + "%";
+            document
+                .getElementById("_progress")
+                .style.setProperty("--scroll", scrollPercent);
+        },
+        { passive: true }
+    );
+</script>
+
+<!-- Header -->
+<header class="h-50">
+
+    <div class="container h-100">
+        
+        <div class="d-flex h-100">
+            <div style="position: absolute;
+                        right: 10%;
+                        top: 400px;
+                        width: 50vw;
+                        height: 22.5vh;
+                        z-index: -1;
+                        background-color: #eb759e;
+                        -webkit-transform: rotate(30deg);
+                        transform: rotate(30deg);">
+            </div>
+
+        </div>
+
+
+
+    </div>
+</header>
+
+<section>
+    <div class="container-fluid part-x" id="slide-2" style="padding: 128px 24px 48px; text-align: left;">
+        <div class="container" style="width: 960px;">
+            {{ content }}
+        </div>
+    </div>
+</section>
+
+<div class="navbar-collapse navbar-ex1-collapse" id="footer" style="font-size: small; font-family: Arial; background-color: #0c37ff; color: white; padding: 2vw">
+    {{ page.disclaimer }}
+</div>
+</body>
+</html>
