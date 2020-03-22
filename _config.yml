@@ -54,7 +54,14 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 
-languages: ["en", "fr", "es", "it", "pl", "ro"]
+languages:
+  en: English
+  fr: Français
+  es: Español
+  it: Italiano
+  pl: Polski
+  ro: Română
+
 default_lang: "en"
 exclude_from_localization: ["javascript", "images", "css"]
 parallel_localization: true
