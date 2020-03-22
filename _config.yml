@@ -61,6 +61,8 @@ languages:
   it: Italiano
   pl: Polski
   ro: Română
+  he: עברית
+  hi: हिन्दी
 
 default_lang: "en"
 exclude_from_localization: ["javascript", "images", "css"]
