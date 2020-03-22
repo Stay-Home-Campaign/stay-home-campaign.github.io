@@ -28,6 +28,42 @@ a:visited {
     color: #0c37ff;
 }
 
+.language-container {
+    float: right;
+    margin-top: 16px;
+    position: relative;
+}
+
+select.language-selector {
+    background: transparent;
+    color: white;
+    border: 0;
+    padding: 5px 24px 5px 8px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+select.language-selector::-ms-expand {
+    display: none;
+}
+
+.language-container:after {
+    display: block;
+    content: "\25bc";
+    position: absolute;
+    color: white;
+    font-size: 12px;
+    top: 7px;
+    right: 4px;
+}
+
+.language-selector option {
+    line-height: 16px;
+    background: white;
+    color: black;
+}
+
 .part-x {
     background: #eb759e;
     display: flex;
