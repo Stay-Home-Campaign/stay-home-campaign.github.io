@@ -187,7 +187,6 @@ footer {
 
 .socials {
     display: flex;
-    align-items: center;
     justify-content: center;
     display: -webkit-box;
     display: -moz-box;
