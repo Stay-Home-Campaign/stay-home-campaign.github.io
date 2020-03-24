@@ -171,7 +171,8 @@
 
             <div style="padding-bottom: 2.5vh">
                 <p style="font-weight: bold">
-                    Want to get involved? <a href="https://docs.google.com/forms/d/e/1FAIpQLSdyQnwVWWw6cTNkoaxXdB-XTEbtD45lpFD4QPKfBHyytyAlZw/viewform" target="_blank">Click here to join the movement</a>.
+                    {% assign volunteerCTA = page.joinTheCause | replace: "_", "</a>" %}
+                    {{ volunteerCTA | replace_first: "</a>", "<a href='https://docs.google.com/forms/d/e/1FAIpQLSdyQnwVWWw6cTNkoaxXdB-XTEbtD45lpFD4QPKfBHyytyAlZw/viewform' target='_blank'>" }}
                 </p>
             </div>
 
