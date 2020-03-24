@@ -96,7 +96,7 @@
         <div class="d-flex h-100 text-center align-items-center">
 
             <div class="w-100 text-white" style="position: absolute">
-                <p style="font-size: 5vw">{{ page.title }}</p>
+                <p style="font-size: 5vw" class="direction-{{page.direction}}">{{ page.title }}</p>
                 <p style="font-weight: bold; font-size: 10vw">#STAYHOME</p>
             </div>
 
@@ -119,13 +119,13 @@
 </header>
 
 <section>
-    <div class="container-fluid part-x" id="slide-2" style="padding-top: 20%; padding-bottom: 20%">
+    <div class="container-fluid part-x direction-{{page.direction}}" id="slide-2" style="padding-top: 20%; padding-bottom: 20%">
 
         <div class="container-lg" style="max-width: 960px;">
             <p><h1><strong>{{ page.section1-title }}</strong></h1></p>
 
             <div class="row justify-content-md-center" style="padding: 30px">
-                <div class="col-sm" style="padding: 10px">
+                <div class="col-sm" style="padding: 10px;">
                     ❤ {{ page.section1-1 }}
                 </div>
                 <div class="col-sm" style="padding: 10px">
@@ -142,7 +142,7 @@
 </section>
 
 <section>
-    <div class="container-fluid part-x" id="slide-3" style="padding-top: 20%; padding-bottom: 20%">
+    <div class="container-fluid part-x direction-{{page.direction}}" id="slide-3" style="padding-top: 20%; padding-bottom: 20%">
 
         <div class="container-lg" style="max-width: 960px;">
         <p><h1><strong>{{ page.section2-title }}</strong></h1></p>
@@ -185,9 +185,9 @@
     </div>
 </section>
 
-<div class="navbar-collapse navbar-ex1-collapse" id="footer" style="font-size: small; font-family: Arial; background-color: #0c37ff; color: white; padding: 2vw">
-    <a style="color: white" href="/privacy" target="_blank">Privacy policy</a><br /><br />
-    {{ page.disclaimer }}
+<div class="navbar-collapse navbar-ex1-collapse direction-{{page.direction}}" id="footer" style="font-size: small; font-family: Arial; background-color: #0c37ff; color: white; padding: 2vw">
+    <p><a style="color: white" href="/privacy" target="_blank">Privacy policy</a></p>
+    <p>{{ page.disclaimer }}</p>
 </div>
 </body>
 </html>
