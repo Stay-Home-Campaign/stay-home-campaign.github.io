@@ -67,3 +67,8 @@ languages:
 default_lang: "en"
 exclude_from_localization: ["javascript", "images", "css"]
 parallel_localization: true
+
+defaults:
+  -
+    values:
+      direction: "ltr"

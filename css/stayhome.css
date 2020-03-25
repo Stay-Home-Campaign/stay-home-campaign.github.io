@@ -194,6 +194,18 @@ footer {
     display: -webkit-flex;
 }
 
+.direction-rtl {
+    direction: rtl;
+}
+
+#footer.direction-rtl p {
+    text-align: right;
+}
+
+.direction-ltr {
+    direction: ltr;
+}
+
 @media (max-width: 480px) {
     .socials {
         flex-direction: column;
