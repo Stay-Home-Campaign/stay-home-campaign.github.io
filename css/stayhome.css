@@ -18,6 +18,7 @@ html {
 
 body {
     font-family: Raleway;
+    font-size: 18px;
 }
 
 a:link {
@@ -101,7 +102,7 @@ main {
 
 .slide {
     padding-top: 20%;
-    max-width: 840px;
+    max-width: 960px;
 }
 
 .slide h2 {
@@ -173,8 +174,12 @@ footer {
     direction: ltr;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 530px) {
     .socials div {
         padding: 5px;
     }
+    .guidelines div {
+        margin-top: 16px;
+    }
 }
+
