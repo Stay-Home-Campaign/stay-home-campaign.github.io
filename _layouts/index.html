@@ -74,120 +74,101 @@
 
 <!-- Header -->
 <header>
-
+    <div class="container language-container">
+        <select class="language-selector" onchange="document.location.href=this.value"> 
+            {% for lang in site.languages %}
+                {% assign href = lang[0] %}
+                {% if href == site.default_lang %}
+                    {% assign href = '' %}
+                {% endif %}
+                {% if href == page.lang %}
+                    <option selected value="/{{ href }}">{{ lang[1] }}</option>
+                    {% continue %}
+                {% endif %}
+                    <option value="/{{ href }}">{{ lang[1] }}</option>
+            {% endfor %}
+        </select> 
+    </div>
     <div class="container h-100">
-
-        <div class="language-container">
-            <select class="language-selector" onchange="document.location.href=this.value"> 
-                {% for lang in site.languages %}
-                    {% assign href = lang[0] %}
-                    {% if href == site.default_lang %}
-                        {% assign href = '' %}
-                    {% endif %}
-                    {% if href == page.lang %}
-                        <option selected value="/{{ href }}">{{ lang[1] }}</option>
-                        {% continue %}
-                    {% endif %}
-                        <option value="/{{ href }}">{{ lang[1] }}</option>
-                {% endfor %}
-            </select> 
-        </div>
-        
         <div class="d-flex h-100 text-center align-items-center">
-
-            <div class="w-100 text-white" style="position: absolute">
-                <p style="font-size: 5vw" class="direction-{{page.direction}}">{{ page.title }}</p>
+            <div class="w-100 text-white">
+                <h1 style="font-size: 5vw" class="direction-{{page.direction}}">{{ page.title }}</h1>
                 <p style="font-weight: bold; font-size: 10vw">#STAYHOME</p>
             </div>
-
-            <div style="position: absolute;
-                            right: 10%;
-                            bottom: -30%;
-                            width: 50vw;
-                            height: 45vh;
-                            z-index: -1;
-                            background-color: #eb759e;
-                            -webkit-transform: rotate(30deg);
-                            transform: rotate(30deg);">
-            </div>
-
+            <div class="style-mark"></div>
         </div>
-
-
-
     </div>
 </header>
 
-<section>
-    <div class="container-fluid part-x direction-{{page.direction}}" id="slide-2" style="padding-top: 20%; padding-bottom: 20%">
-
-        <div class="container-lg" style="max-width: 960px;">
-            <p><h1><strong>{{ page.section1-title }}</strong></h1></p>
-
-            <div class="row justify-content-md-center" style="padding: 30px">
-                <div class="col-sm" style="padding: 10px;">
-                    ❤ {{ page.section1-1 }}
-                </div>
-                <div class="col-sm" style="padding: 10px">
-                    ❤ {{ page.section1-2 }}
-                </div>
-                <div class="col-sm" style="padding: 10px">
-                    ❤ {{ page.section1-3 }}
-                </div>
+<main>
+    <section class="direction-{{page.direction}} container slide" id="slide-2">
+        <h2 class="h1"><strong>{{ page.section1-title }}</strong></h2>
+        <div class="row guidelines justify-content-center">
+            <div class="col-sm">
+                ❤ {{ page.section1-1 }}
             </div>
-
-            <div class="scroll-down" style="padding: 5vh"><a href="#slide-3">{{ page.learnMore }}</a></div>
+            <div class="col-sm">
+                ❤ {{ page.section1-2 }}
+            </div>
+            <div class="col-sm">
+                ❤ {{ page.section1-3 }}
+            </div>
         </div>
-    </div>
-</section>
+        <a class="learn-more" href="#slide-3">{{ page.learnMore }}</a>
+    </section>
 
-<section>
-    <div class="container-fluid part-x direction-{{page.direction}}" id="slide-3" style="padding-top: 20%; padding-bottom: 20%">
-
-        <div class="container-lg" style="max-width: 960px;">
-        <p><h1><strong>{{ page.section2-title }}</strong></h1></p>
-
-            <div class="row justify-content-md-center" style="padding: 30px">
-
-                <div class="col-sm" style="padding: 10px">
-                    ❤ {{ page.section2-1 }}
-                </div>
-                <div class="col-sm" style="padding: 10px">
-                    ❤ {{ page.section2-2 }}
-                </div>
-                <div class="col-sm" style="padding: 10px">
-                    ❤ {{ page.section2-3 }}
-                </div>
-
+    <section class="direction-{{page.direction}} container slide" id="slide-3">
+        <h2 class="h1"><strong>{{ page.section2-title }}</strong></h2>
+        <div class="row guidelines justify-content-center">
+            <div class="col-sm">
+                ❤ {{ page.section2-1 }}
             </div>
-
-            <div style="padding: 2.5vh">
-                <p style="font-weight: bold">{{ page.learnMoreAt }}
-                    <a href="https://www.cdc.gov/coronavirus/2019-ncov/hcp/guidance-prevent-spread.html" target="_blank">cdc.gov</a>,
-                    <a href="https://www.who.int/health-topics/coronavirus" target="_blank">who.int</a>,
-                    <a href="https://www.hopkinsmedicine.org/health/conditions-and-diseases/coronavirus/coronavirus-social-distancing-and-self-quarantine" target="_blank">hopkinsmedicine.org</a>.
-                </p>
+            <div class="col-sm">
+                ❤ {{ page.section2-2 }}
             </div>
-
-            <div style="padding-bottom: 2.5vh">
-                <p style="font-weight: bold">
-                    {% assign volunteerCTA = page.joinTheCause | replace: "_", "</a>" %}
-                    {{ volunteerCTA | replace_first: "</a>", "<a href='https://docs.google.com/forms/d/e/1FAIpQLSdyQnwVWWw6cTNkoaxXdB-XTEbtD45lpFD4QPKfBHyytyAlZw/viewform' target='_blank'>" }}
-                </p>
+            <div class="col-sm">
+                ❤ {{ page.section2-3 }}
             </div>
+        </div>
+        <a class="learn-more" href="#slide-4">{{ page.learnMore }}</a>
+    </section>
 
-            <div class="socials"> 
-                <div class="fb-share-button" data-href="https://dontleave.org/{{ urlLang }}" data-layout="button  " data-size="large" style="padding: 10px"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdontleave.org%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
-                <div class="fb-like" data-href="https://www.facebook.com/stayhomecampaign" data-width="" data-layout="button_count" data-action="like" data-size="large" data-share="false" style="padding: 10px"></div>
-                <div style="padding: 10px"><a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-text="I&#39;m staying home during the #covid-19 outbreak! " data-url="http://dontleave.org/{{ urlLang }}" data-hashtags="stayhome" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
+    <section class="direction-{{page.direction}} container slide" id="slide-4">
+        <div>
+            <p>{{ page.learnMoreAt }}
+                <a href="https://www.cdc.gov/coronavirus/2019-ncov/hcp/guidance-prevent-spread.html" target="_blank">cdc.gov</a>,
+                <a href="https://www.who.int/health-topics/coronavirus" target="_blank">who.int</a>,
+                <a href="https://www.hopkinsmedicine.org/health/conditions-and-diseases/coronavirus/coronavirus-social-distancing-and-self-quarantine" target="_blank">hopkinsmedicine.org</a>.
+            </p>
+        </div>
+
+        <div>
+            <p>
+                {% assign volunteerCTA = page.joinTheCause | replace: "_", "</a>" %}
+                {{ volunteerCTA | replace_first: "</a>", "<a href='https://docs.google.com/forms/d/e/1FAIpQLSdyQnwVWWw6cTNkoaxXdB-XTEbtD45lpFD4QPKfBHyytyAlZw/viewform' target='_blank'>" }}
+            </p>
+        </div>
+
+        <div class="socials"> 
+            <div class="fb-share-button" data-href="https://dontleave.org/{{ urlLang }}" data-layout="button  " data-size="large">
+                <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdontleave.org%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">
+                    Share
+                </a>
             </div>
-    </div>
-    </div>
-</section>
-
-<div class="navbar-collapse navbar-ex1-collapse direction-{{page.direction}}" id="footer" style="font-size: small; font-family: Arial; background-color: #0c37ff; color: white; padding: 2vw">
-    <p><a style="color: white" href="/privacy" target="_blank">Privacy policy</a></p>
+            <div class="fb-like" data-href="https://www.facebook.com/stayhomecampaign" data-width="" data-layout="button_count" data-action="like" data-size="large" data-share="false">
+            </div>
+            <div>
+                <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-text="I&#39;m staying home during the #covid-19 outbreak! " data-url="http://dontleave.org/{{ urlLang }}" data-hashtags="stayhome" data-show-count="false">
+                    Tweet
+                </a>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="direction-{{page.direction}}" id="footer" style="font-size: small; font-family: Arial; background-color: #0c37ff; color: white; padding: 2vw">
+    <p><a href="/privacy" target="_blank">Privacy policy.</a></p>
     <p>{{ page.disclaimer }}</p>
-</div>
+</footer>
 </body>
 </html>
