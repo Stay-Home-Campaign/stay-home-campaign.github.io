@@ -78,13 +78,15 @@
     </div>
 </header>
 
-<section>
-    <div class="container-fluid part-x" id="slide-2" style="text-align: left;">
-        <div class="container-lg" style="max-width: 960px;">
-            {{ content }}
+<main>
+    <section class="direction-{{page.direction}} container privacy">
+        <div class="row">
+            <div class="col-12">
+                {{ content }}
+            </div>
         </div>
-    </div>
-</section>
+    </section>
+</main>
 
 <div class="navbar-collapse navbar-ex1-collapse" id="footer" style="font-size: small; font-family: Arial; background-color: #0c37ff; color: white; padding: 2vw">
     {{ page.disclaimer }}

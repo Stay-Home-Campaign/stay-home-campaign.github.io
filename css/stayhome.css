@@ -105,6 +105,12 @@ main {
     max-width: 960px;
 }
 
+.privacy {
+    padding-top: 48px;
+    max-width: 960px;
+    text-align: left;
+}
+
 .slide h2 {
     margin-bottom: 48px;
 }
