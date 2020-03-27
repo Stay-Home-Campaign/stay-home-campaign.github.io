@@ -105,6 +105,14 @@ main {
     max-width: 960px;
 }
 
+.slide--first {
+    padding-top: 10%;
+}
+
+.slide--video {
+    padding-top: 128px;
+}
+
 .privacy {
     padding-top: 48px;
     max-width: 960px;
