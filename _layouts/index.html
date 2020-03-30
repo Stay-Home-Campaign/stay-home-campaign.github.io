@@ -126,7 +126,7 @@
         <h2 class="h1"><strong>{{ page.section2-title }}</strong></h2>
         <div class="row guidelines justify-content-center">
             <div class="col-sm">
-                ❤ {{ page.section2-1 }}
+                ❤ {{ page.section2-1 }} <a href="https://www.youtube.com/watch?v=y7e8nM0JAz0"> (video)</a>
             </div>
             <div class="col-sm">
                 ❤ {{ page.section2-2 }}
@@ -139,10 +139,28 @@
     </section>
 
     <section class="direction-{{page.direction}} container slide" id="slide-4">
+        <h2 class="h1"><strong>{{ page.section3-title }}</strong></h2>
+        <div class="row guidelines justify-content-center">
+            <div class="col-sm">
+                ❤ {{ page.section3-1 }}
+            </div>
+            <div class="col-sm">
+                ❤ {{ page.section3-2 }}
+            </div>
+            <div class="col-sm">
+                ❤ {{ page.section3-3 }}
+            </div>
+        </div>
+        <a class="learn-more" href="#slide-5">{{ page.learnMore }}</a>
+    </section>
+
+
+    <section class="direction-{{page.direction}} container slide" id="slide-5">
         <div>
+            <p>{{ page.url }}</p>
             <p>{{ page.learnMoreAt }}
-                <a href="https://www.cdc.gov/coronavirus/2019-ncov/hcp/guidance-prevent-spread.html" target="_blank">cdc.gov</a>,
                 <a href="https://www.who.int/health-topics/coronavirus" target="_blank">who.int</a>,
+                <a href="https://www.cdc.gov/coronavirus/2019-ncov/hcp/guidance-prevent-spread.html" target="_blank">cdc.gov</a>,
                 <a href="https://www.hopkinsmedicine.org/health/conditions-and-diseases/coronavirus/coronavirus-social-distancing-and-self-quarantine" target="_blank">hopkinsmedicine.org</a>.
             </p>
         </div>
@@ -165,7 +183,11 @@
     </section>
 </main>
 <footer class="direction-{{page.direction}}" id="footer" style="font-size: small; font-family: Arial; background-color: #0c37ff; color: white; padding: 2vw">
-    <p><a href="/privacy" target="_blank">Privacy policy.</a></p>
+    <p>
+        <a href="/privacy" target="_blank">Privacy policy.</a>
+        <a href="http://about.stayhomecampaign.org/" target="_blank">About.</a>
+        <a href="mailto:contact@stayhomecampaign.org">Contact.</a>
+    </p>
     <p>{{ page.disclaimer }}</p>
 </footer>
 </body>
