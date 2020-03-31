@@ -75,19 +75,19 @@ defaults:
       title: PUT AN END TO THE OUTBREAK
 
       section1-title: First of all, don't panic.
-      section1-1: Plan ahead and ask others for help to ensure that you can successfully stay at home.
-      section1-2: Ask your employer, friends and family to help you get the things you need to stay at home.
+      section1-1: Plan ahead and ask others for help to ensure that you can stay at home as much as possible.
+      section1-2: Avoid crowds and large gatherings. Make sure to keep physical distance from others.
       section1-3: If you have cough or high temperature, do not leave home for 14 days from when your symptoms started.
 
       section2-title: "Plan, prepare, #stayhome."
-      section2-1: Wash your hands regularly for 20 seconds. Use soap, or hand sanitiser.
+      section2-1: Wash your hands regularly for 20 seconds. Use soap, or hand sanitiser whenever possible.
       section2-2: Stay at least 3 steps away from other people in your home. This will help protect them.
       section2-3: Prepare a room or shelter for those over 70 where they can stay isolated (with a carer, if necessary).
 
       section3-title: "Whether at home or not, stay safe."
-      section3-1: Make sure that you stay connected online with your family and friends.
-      section3-2: Always use your elbow to cover your mouth when you cough or sneeze.
-      section3-3: Avoid touching your face to stay safe.
+      section3-1: Make sure that you stay connected online with your family and friends. Limit physical contact with them.
+      section3-2: Always use your elbow to cover your mouth when you cough or sneeze. Avoid touching your face.
+      section3-3: Share these tips with your family and friends. Together we can put an end to the outbreak!
 
       learnMore: LEARN MORE
       learnMoreAt: Learn more at
