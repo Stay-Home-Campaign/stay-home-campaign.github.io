@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://stayhomecampaign.org/sitemap.xml
