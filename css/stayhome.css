@@ -1,15 +1,15 @@
-.bd-placeholder-img {
-    font-size: 1.125rem;
-    text-anchor: middle;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
 @media (min-width: 768px) {
     .bd-placeholder-img-lg {
         font-size: 3.5rem }
+}
+
+@media (max-width: 530px) {
+    .socials div {
+        padding: 5px;
+    }
+    .guidelines div {
+        margin-top: 16px;
+    }
 }
 
 html {
@@ -21,10 +21,46 @@ body {
     font-size: 18px;
 }
 
-a:link {
-    color: #0c37ff;
+header {
+    position: relative;
+    font-family: Raleway;
+    height: 100vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+    background-color: #0c37ff;
+
 }
 
+header .container {
+    position: relative;
+    z-index: 2;
+}
+
+main {
+    background: #eb759e;
+    color: white;
+    text-align: center;
+    padding-bottom: 20%;
+}
+
+footer {
+    background: #eb759e;
+    color: white;
+    font-size: small;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5vh;
+    text-align: left;
+}
+
+footer a:link,
+footer a:visited {
+    color: white;
+}
+
+a:link,
 a:visited {
     color: #0c37ff;
 }
@@ -65,22 +101,6 @@ select.language-selector::-ms-expand {
     color: black;
 }
 
-header {
-    position: relative;
-    font-family: Raleway;
-    height: 100vh;
-    min-height: 25rem;
-    width: 100%;
-    overflow: hidden;
-    background-color: #0c37ff;
-
-}
-
-header .container {
-    position: relative;
-    z-index: 2;
-}
-
 .style-mark {
     position: absolute;
     right: 10%;
@@ -91,13 +111,6 @@ header .container {
     background-color: #eb759e;
     -webkit-transform: rotate(30deg);
     transform: rotate(30deg);
-}
-
-main {
-    background: #eb759e;
-    color: white;
-    text-align: center;
-    padding-bottom: 20%;
 }
 
 .slide {
@@ -113,10 +126,6 @@ main {
     padding-top: 128px;
 }
 
-.slide--map {
-    /*padding-top: 128px;*/
-}
-
 .privacy {
     padding-top: 48px;
     max-width: 960px;
@@ -130,22 +139,6 @@ main {
 .learn-more {
     display: inline-block;
     margin-top: 48px;
-}
-
-footer {
-    background: #eb759e;
-    color: white;
-    font-size: small;
-    font-weight: bold;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 1.5vh;
-}
-
-footer a:link,
-footer a:visited {
-    color: white;
 }
 
 .disclaimer {
@@ -176,10 +169,6 @@ footer a:visited {
     padding: 10px
 }
 
-footer {
-    text-align: left;
-}
-
 .direction-rtl {
     direction: rtl;
 }
@@ -192,12 +181,11 @@ footer {
     direction: ltr;
 }
 
-@media (max-width: 530px) {
-    .socials div {
-        padding: 5px;
-    }
-    .guidelines div {
-        margin-top: 16px;
-    }
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
-
