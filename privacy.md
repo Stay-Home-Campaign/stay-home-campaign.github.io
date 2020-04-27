@@ -3,7 +3,7 @@ layout: privacy
 disclaimer: "Disclaimer: The content of this website does not constitute medical advice. The information provided above is meant as a suggestion for concerned individuals to follow a loose set of guidelines based on best practices and anecdotal evidence to protect themselves and their loved ones. There is no guarantee or scientific evidence that following the mentioned guidelines will lead to a reduction in new infections or even stop the COVID-19 epidemic. There is also no guarantee that following these guidelines will reduce the risk of getting infected with SARS-CoV-2 or any other viral or bacterial contagion. All information provided on this website is given with the best intent and will to provide factual information. In no event shall the website operators be held liable for any claim, damages, or other liabilities. If you have concerns or comments about the information provided on this website, please write to contact@stayhomecampaign.org."
 ---
 
-# Privacy Policy for stayhomecampaign.org
+# Privacy Policy
 At stayhomecampaign.org, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by #STAYHOME and how we use it.
 
 If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact us through email at contact@stayhomecampaign.org.
