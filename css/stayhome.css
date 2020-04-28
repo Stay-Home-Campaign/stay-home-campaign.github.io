@@ -18,10 +18,9 @@ header {
     position: relative;
     height: 100vh;
     width: 100%;
-    min-height: 25rem;
+    /*min-height: 25rem;*/
     overflow: hidden;
     color: #0c37ff;
-    opacity: 100%;
     background: rgb(248,250,255);
     background: linear-gradient(0deg, rgba(248,250,255,1) 20%, rgba(236,240,251,1) 85%);
 }
@@ -35,7 +34,7 @@ main {
     background: #f8faff;
     color: #0c37ff;
     text-align: center;
-    padding-bottom: 10%;
+    padding-bottom: 8%;
 }
 
 footer {
@@ -83,6 +82,20 @@ select.language-selector::-ms-expand {
     display: none;
 }
 
+.logo-small {
+    width: 150px;
+    display: block;
+    margin: auto;
+    margin-top: 8vh
+}
+
+.logo-large {
+    width: 250px;
+    display: block;
+    margin: auto;
+    margin-top: 8vh
+}
+
 .language-container {
     margin-top: 16px;
     position: relative;
@@ -118,19 +131,13 @@ select.language-selector::-ms-expand {
     max-width: 960px;
 }
 
-.privacy {
-    padding-top: 48px;
-    max-width: 960px;
-    text-align: left;
-    line-height: 3.5vh
-}
-
+.privacy,
 .about {
     font-family: "Open Sans";
-    padding-top: 1vh;
     max-width: 960px;
     text-align: left;
-    line-height: 3.5vh
+    line-height: 3.5vh;
+    padding-top: 5vh
 }
 
 .slide h2 {
@@ -238,6 +245,10 @@ MOBILE
         width: 100%;
     }
 
+    h1 {
+        font-size: xx-large;
+    }
+
     h2 {
         font-size: xx-large;
     }
@@ -248,10 +259,10 @@ MOBILE
 
     .about,
     .privacy {
-        padding-top: 12px;
+        padding-top: 5vh;
         line-height: 5vh;
         font-family: "Open Sans";
-        font-size: medium
+        font-size: smaller;
     }
 
     #disclaimer {
@@ -290,6 +301,10 @@ MOBILE
 @media (max-width: 320px) {
     .col-sm {
         font-size: small;
+    }
+
+    h1 {
+        font-size: x-large;
     }
 
     h2 {
