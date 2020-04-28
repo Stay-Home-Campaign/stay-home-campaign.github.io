@@ -39,7 +39,10 @@
 
     {% include logo-small-a.html %}
 
-    <section class="direction-{{page.direction}} container" style="padding-top: 5vh">
+    <section class="direction-{{page.direction}} container map" style="padding-top: 5vh">
+
+        <p>{{ page.badAdvice }}</p>
+
 
         <!-- Map-->
         <div class="embed-responsive embed-responsive-21by9">
@@ -47,7 +50,7 @@
         </div>
 
         <br>
-        <p> {{ page.missAnything }} <a href="https://docs.google.com/forms/d/e/1FAIpQLSclVNzZJvGd72HoNKJDEolKKb_UROUgBrwpnFS4QJ5mV0mVYw/viewform">{{ page.letUsKnow }}</a></p>
+        <p>{{ page.missAnything }} <a href="https://docs.google.com/forms/d/e/1FAIpQLSclVNzZJvGd72HoNKJDEolKKb_UROUgBrwpnFS4QJ5mV0mVYw/viewform">{{ page.letUsKnow }}</a></p>
 
     </section>
 </main>

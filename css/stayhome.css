@@ -47,6 +47,12 @@ footer {
     /*font-weight: 700;*/
     justify-content: center;
     padding: 1vh;
+    /*position: fixed;*/
+    /*height: 50px;*/
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
 }
 
 footer a:link,
@@ -255,6 +261,11 @@ MOBILE
 
     footer {
         font-size: small;
+    }
+
+    .map {
+        font-size: medium;
+        padding: 5vw;
     }
 
     .about,
